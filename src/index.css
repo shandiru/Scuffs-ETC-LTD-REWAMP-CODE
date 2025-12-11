@@ -1,0 +1,28 @@
+/* index.css */
+@import "tailwindcss";
+
+/* make `dark:` respond to .dark on <html> */
+@custom-variant dark (&:where(.dark, .dark *));  /* <-- add this line */
+
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.animate-scroll {
+  display: flex;
+  animation: scroll infinite;
+  animation-duration: 30s;
+  /* Adjust as necessary */
+}
