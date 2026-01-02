@@ -2,6 +2,7 @@
 "use client";
 import React from "react";
 import { FaPalette, FaStar, FaPhoneAlt } from "react-icons/fa";
+import { PHONE_NUMBER, PHONE_NUMBER_FORMATTED } from '../../../Data/contact';
 
 const VehicleTransformation = () => {
   const PINK = "#E066E6";
@@ -94,7 +95,7 @@ const VehicleTransformation = () => {
 
           {/* Call Button */}
           <a
-            href="tel:+447776300300"
+            href={`tel:${PHONE_NUMBER}`}
             className="inline-flex items-center justify-center gap-2 font-medium rounded-md px-8 h-12 text-lg border transition-all shadow-sm"
             style={{ borderColor: PINK, color: PINK, backgroundColor: "#fff" }}
             onMouseEnter={(e) => {
@@ -106,7 +107,7 @@ const VehicleTransformation = () => {
               e.currentTarget.style.color = PINK;
             }}
           >
-            <FaPhoneAlt className="text-[#E066E6]" /> Call +44 7776 300300
+            <FaPhoneAlt className="text-[#E066E6]" /> Call {PHONE_NUMBER_FORMATTED}
           </a>
         </div>
       </div>

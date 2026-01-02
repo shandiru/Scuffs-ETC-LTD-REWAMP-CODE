@@ -1,12 +1,13 @@
 import React from "react";
 import { HashLink } from "react-router-hash-link";
 import { FaShieldAlt, FaTools } from "react-icons/fa";
+import { PHONE_NUMBER, PHONE_NUMBER_FORMATTED } from '../../../Data/contact';
 
 const WarrantyClaimSection = () => {
   const PINK = "#E066E6";
   const LIME = "#CCFF66";
 
-  // Offset so sticky header doesn’t overlap
+  // Offset so sticky header doesn't overlap
   const scrollWithOffset = (el) => {
     const yOffset = -80; // adjust if your header height differs
     const y =
@@ -80,7 +81,7 @@ const WarrantyClaimSection = () => {
         </h2>
         <p className="mt-4 text-lg text-gray-700 max-w-2xl mx-auto">
           If you experience any issues with our work, contact us immediately.
-          We’re committed to resolving any concerns quickly and professionally.
+          We're committed to resolving any concerns quickly and professionally.
         </p>
 
         {/* Actions */}
@@ -107,7 +108,7 @@ const WarrantyClaimSection = () => {
 
           {/* Call Button */}
           <a
-            href="tel:+447776300300"
+            href={`tel:${PHONE_NUMBER}`}
             className="inline-flex items-center justify-center gap-2 font-medium rounded-md border shadow-sm transition-all px-8 h-12 text-lg"
             style={{ borderColor: PINK, color: PINK, backgroundColor: "#fff" }}
             onMouseEnter={(e) => {
@@ -119,7 +120,7 @@ const WarrantyClaimSection = () => {
               e.currentTarget.style.color = PINK;
             }}
           >
-            Call +44 7776 300300
+            Call {PHONE_NUMBER_FORMATTED}
           </a>
         </div>
       </div>

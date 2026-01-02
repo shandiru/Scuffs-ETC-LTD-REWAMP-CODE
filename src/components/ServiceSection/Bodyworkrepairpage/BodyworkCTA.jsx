@@ -1,6 +1,7 @@
 // File: BodyworkCTA.jsx
 "use client";
 import { HashLink } from "react-router-hash-link";
+import { PHONE_NUMBER, PHONE_NUMBER_FORMATTED } from '../../../Data/contact';
 
 export default function BodyworkCTA() {
   const PINK = "#E066E6";
@@ -52,7 +53,7 @@ export default function BodyworkCTA() {
           </HashLink>
           {/* Call Button */}
           <a
-            href="tel:+447776300300"
+            href={`tel:${PHONE_NUMBER}`}
             className="inline-flex items-center justify-center gap-2 font-medium rounded-md text-lg px-8 h-12 border transition shadow-sm"
             style={{
               borderColor: PINK,
@@ -68,7 +69,7 @@ export default function BodyworkCTA() {
               e.currentTarget.style.color = PINK;
             }}
           >
-            Call +44 7776 300300
+            Call {PHONE_NUMBER_FORMATTED}
           </a>
         </div>
       </div>

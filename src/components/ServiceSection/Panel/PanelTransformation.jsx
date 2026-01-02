@@ -3,12 +3,13 @@
 import React from "react";
 import { FaPhoneAlt } from "react-icons/fa";
 import { HashLink } from "react-router-hash-link";
+import { PHONE_NUMBER, PHONE_NUMBER_FORMATTED } from '../../../Data/contact';
 
 const PanelTransformation = () => {
   const PINK = "#E066E6";
   const LIME = "#CCFF66";
 
-  // Offset so the fixed header doesn’t overlap the contact form
+  // Offset so the fixed header doesn't overlap the contact form
   const scrollWithOffset = (el) => {
     const yOffset = -80; // adjust if your header height is different
     const y =
@@ -105,7 +106,7 @@ const PanelTransformation = () => {
 
           {/* Secondary CTA */}
           <a
-            href="tel:+447776300300"
+            href={`tel:${PHONE_NUMBER}`}
             className="inline-flex items-center justify-center gap-2 font-medium h-12 rounded-md text-lg px-8 border transition-all shadow-sm"
             style={{ borderColor: PINK, color: PINK, backgroundColor: "#fff" }}
             onMouseEnter={(e) => {
@@ -117,7 +118,7 @@ const PanelTransformation = () => {
               e.currentTarget.style.color = PINK;
             }}
           >
-            Call +44 7776 300300
+            Call {PHONE_NUMBER_FORMATTED}
           </a>
         </div>
       </div>

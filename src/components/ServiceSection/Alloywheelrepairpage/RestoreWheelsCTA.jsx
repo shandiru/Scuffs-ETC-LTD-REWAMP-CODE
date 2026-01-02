@@ -1,12 +1,13 @@
 // File: RestoreWheelsCTA.jsx
 "use client";
 import { HashLink } from "react-router-hash-link";
+import { PHONE_NUMBER, PHONE_NUMBER_FORMATTED } from '../../../Data/contact';
 
 export default function RestoreWheelsCTA() {
   const PINK = "#E066E6";
   const LIME = "#CCFF66";
 
-  // offset so header doesn’t cover section
+  // offset so header doesn't cover section
   const scrollWithOffset = (el) => {
     const yOffset = -80; // adjust to match your header height
     const y =
@@ -50,7 +51,7 @@ export default function RestoreWheelsCTA() {
 
           {/* Call Button */}
           <a
-            href="tel:+447776300300"
+            href={`tel:${PHONE_NUMBER}`}
             className="inline-flex items-center justify-center gap-2 font-medium transition h-10 rounded-md text-lg px-8 py-3 border"
             style={{
               borderColor: PINK,
@@ -66,7 +67,7 @@ export default function RestoreWheelsCTA() {
               e.currentTarget.style.color = PINK;
             }}
           >
-            Call +44 7776 300300
+            Call {PHONE_NUMBER_FORMATTED}
           </a>
         </div>
       </div>

@@ -8,6 +8,7 @@ import {
 } from "react-icons/fa";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { PHONE_NUMBER, PHONE_NUMBER_FORMATTED, PHONE_NUMBER_RAW } from '../../Data/contact';
 
 export default function ContactSection() {
   const [formData, setFormData] = useState({
@@ -70,7 +71,8 @@ export default function ContactSection() {
         `*Message:* ${formData.message}`;
 
       const encodedMsg = encodeURIComponent(message);
-      const phoneNumber = "447776300300";
+      // Use the imported phone number variable instead of hardcoded value
+      const phoneNumber = PHONE_NUMBER_RAW;
 
       window.open(`https://wa.me/${phoneNumber}?text=${encodedMsg}`, "_blank");
 
@@ -168,8 +170,8 @@ export default function ContactSection() {
               {
                 label: "Phone",
                 icon: <FaPhoneAlt />,
-                value: "+44 7776 300300",
-                href: "tel:+447776300300",
+                value: PHONE_NUMBER_FORMATTED,
+                href: `tel:${PHONE_NUMBER}`,
               },
               {
                 label: "Email",
