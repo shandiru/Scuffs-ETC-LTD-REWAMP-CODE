@@ -4,7 +4,7 @@ import BodyworkRestoration from '../components/ServiceSection/Bodyworkrepairpage
 import BodyworkCTA from '../components/ServiceSection/Bodyworkrepairpage/BodyworkCTA'
 
 import { HeroData } from '../Data/Bodyworkrepairpage/Data'
-const Bodywork = () => {
+const BodyworkRepairPage = () => {
   return (
     <div>
     <BodyworkRepairHero {...HeroData}/>
@@ -14,4 +14,4 @@ const Bodywork = () => {
   )
 }
 
-export default Bodywork
+export default BodyworkRepairPage

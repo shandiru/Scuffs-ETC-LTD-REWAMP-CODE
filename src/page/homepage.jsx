@@ -12,7 +12,7 @@ import WhyChooseUs from "../components/HomePage/WhyChooseUs"
 
 
 
-function App() {
+function  HomePage() {
   return (
     <>
    
@@ -29,4 +29,4 @@ function App() {
   );
 }
 
-export default App;
+export default  HomePage;
