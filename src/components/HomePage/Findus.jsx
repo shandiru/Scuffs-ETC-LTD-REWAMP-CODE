@@ -1,20 +1,12 @@
 
-import React, { useEffect } from "react";
-import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope, FaRegClock } from "react-icons/fa";
-import AOS from "aos";
-import "aos/dist/aos.css";
+
+import { FaMapMarkerAlt, FaPhoneAlt } from "react-icons/fa";
+
 
 const FindUs = () => {
   const PINK = "#E066E6";
 
-  useEffect(() => {
-    AOS.init({
-      duration: 1000,
-      easing: "ease-in-out",
-      once: false,   // runs every time you scroll down
-      mirror: true,  // also animates on scroll up
-    });
-  }, []);
+
 
   return (
     <section className="py-10 px-4 bg-background relative overflow-hidden">

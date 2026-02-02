@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { FaStar, FaWrench, FaCar, FaMagic, FaShieldAlt, FaChevronLeft, FaChevronRight } from "react-icons/fa";
+import { FaStar, FaMagic, FaShieldAlt, FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
 // Testimonials data
 const testimonials = [

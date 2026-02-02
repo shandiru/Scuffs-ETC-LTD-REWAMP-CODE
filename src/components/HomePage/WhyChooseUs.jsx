@@ -1,10 +1,7 @@
 
-import React, { useEffect } from "react";
+
 import { FaCarCrash } from "react-icons/fa";
 import { GiCarDoor } from "react-icons/gi";
-import { MdFormatPaint } from "react-icons/md";
-import AOS from "aos";
-import "aos/dist/aos.css";
 
 export default function WhyChooseUs() {
   const PINK = "#E066E6";
@@ -33,14 +30,7 @@ export default function WhyChooseUs() {
     },
   ];
 
-  useEffect(() => {
-    AOS.init({
-      duration: 1000,
-      easing: "ease-in-out",
-      once: false,
-      mirror: true,
-    });
-  }, []);
+
 
   return (
     <section

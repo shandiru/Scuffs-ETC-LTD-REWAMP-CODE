@@ -1,21 +1,13 @@
 
-import React, { useEffect } from "react";
-import { FaWrench, FaCar, FaMagic, FaShieldAlt } from "react-icons/fa";
-import AOS from "aos";
-import "aos/dist/aos.css";
+
+import { FaCar, FaMagic, FaShieldAlt } from "react-icons/fa";
+
 
 export default function CredentialsSection() {
   const PINK = "#E066E6";
   const LIME = "#CCFF66";
 
-  useEffect(() => {
-    AOS.init({
-      duration: 1000,
-      easing: "ease-in-out",
-      once: false, // animate every scroll
-      mirror: true, // ✅ re-animate when scrolling up
-    });
-  }, []);
+
 
   return (
     <section

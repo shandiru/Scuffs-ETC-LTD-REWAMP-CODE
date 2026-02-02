@@ -1,7 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
-import { FaWrench, FaCar, FaMagic, FaShieldAlt } from "react-icons/fa";
-import AOS from "aos";
-import "aos/dist/aos.css";
+import {  FaCar, FaMagic, FaShieldAlt } from "react-icons/fa";
+
 
 export default function GallerySection() {
   const PINK = "#E066E6";
@@ -50,15 +49,7 @@ export default function GallerySection() {
 
   const slide = SLIDES[index];
 
-  // ✅ Init AOS
-  useEffect(() => {
-    AOS.init({
-      duration: 1000,
-      easing: "ease-in-out",
-      once: false, // run every time
-      mirror: true, // ✅ animate on scroll up too
-    });
-  }, []);
+
 
   return (
     <section id="gallery" className="py-20 bg-background scroll-m-10 relative overflow-hidden">

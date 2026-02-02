@@ -1,6 +1,6 @@
 // File: OurServices.jsx
 
-import React, { useEffect } from "react";
+
 import {
   FaCar,
   FaMagic,
@@ -9,8 +9,7 @@ import {
   FaWrench,
 } from "react-icons/fa";
 import { GiCarWheel } from "react-icons/gi";
-import AOS from "aos";
-import "aos/dist/aos.css";
+
 
 const services = [
   {
@@ -58,14 +57,7 @@ const services = [
 ];
 
 export default function OurServices() {
-  useEffect(() => {
-    AOS.init({
-      duration: 1000,
-      easing: "ease-in-out",
-      once: false,
-      mirror: true,
-    });
-  }, []);
+
 
   return (
     <section id="services" className="relative py-16 px-4 scroll-m-10 overflow-hidden">

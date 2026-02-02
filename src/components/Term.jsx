@@ -1,5 +1,4 @@
-// src/pages/TermsConditions.js
-import React from "react";
+
 import { FaGavel, FaLink } from "react-icons/fa";
 
 const TermsConditions = () => {

@@ -1,13 +1,12 @@
 
-import React, { useState, useEffect } from "react";
+import React, { useState} from "react";
 import {
   FaPhoneAlt,
   FaEnvelope,
   FaMapMarkerAlt,
   FaRegClock,
 } from "react-icons/fa";
-import AOS from "aos";
-import "aos/dist/aos.css";
+
 import { PHONE_NUMBER, PHONE_NUMBER_FORMATTED, PHONE_NUMBER_RAW } from '../../Data/contact';
 
 export default function ContactSection() {
@@ -28,14 +27,7 @@ export default function ContactSection() {
   const LIME = "#CCFF66";
   const phoneRegex = /^(?:\+44|0)[1-9]\d{8,9}$/;
 
-  useEffect(() => {
-    AOS.init({
-      duration: 1000,
-      easing: "ease-in-out",
-      once: false,
-      mirror: true,
-    });
-  }, []);
+
 
   const handleChange = (e) => {
     const { name, value } = e.target;
