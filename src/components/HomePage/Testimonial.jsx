@@ -45,75 +45,45 @@ Did a really nice Job of repairing and painting a decent sized scratch and dent 
 ];
 
 const Testimonials = () => {
-  const PINK = "#E066E6";
-  const LIME = "#CCFF66";
-  
   const [currentIndex, setCurrentIndex] = useState(0);
   const [itemsPerView, setItemsPerView] = useState(1);
 
-  // Handle responsive items per view
+  // Responsive items per view
   useEffect(() => {
     const handleResize = () => {
-      if (window.innerWidth >= 1024) {
-        setItemsPerView(3); // Large screens: 3 items
-      } else if (window.innerWidth >= 768) {
-        setItemsPerView(2); // Medium screens: 2 items
-      } else {
-        setItemsPerView(1); // Small screens: 1 item
-      }
+      if (window.innerWidth >= 1024) setItemsPerView(3);
+      else if (window.innerWidth >= 768) setItemsPerView(2);
+      else setItemsPerView(1);
     };
 
     handleResize();
-    window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
   }, []);
 
   const maxIndex = Math.max(0, testimonials.length - itemsPerView);
 
-  const goToPrevious = () => {
-    setCurrentIndex(prev => Math.max(0, prev - 1));
-  };
+  const goToPrevious = () => setCurrentIndex((prev) => Math.max(0, prev - 1));
+  const goToNext = () => setCurrentIndex((prev) => Math.min(maxIndex, prev + 1));
 
-  const goToNext = () => {
-    setCurrentIndex(prev => Math.min(maxIndex, prev + 1));
-  };
-
-  // Handle touch/swipe for mobile
+  // Touch/swipe
   const [touchStart, setTouchStart] = useState(0);
   const [touchEnd, setTouchEnd] = useState(0);
 
-  const handleTouchStart = (e) => {
-    setTouchStart(e.targetTouches[0].clientX);
-  };
-
-  const handleTouchMove = (e) => {
-    setTouchEnd(e.targetTouches[0].clientX);
-  };
-
+  const handleTouchStart = (e) => setTouchStart(e.targetTouches[0].clientX);
+  const handleTouchMove = (e) => setTouchEnd(e.targetTouches[0].clientX);
   const handleTouchEnd = () => {
     if (!touchStart || !touchEnd) return;
-    
     const distance = touchStart - touchEnd;
-    const isLeftSwipe = distance > 50;
-    const isRightSwipe = distance < -50;
-
-    if (isLeftSwipe) {
-      goToNext();
-    }
-    if (isRightSwipe) {
-      goToPrevious();
-    }
+    if (distance > 50) goToNext();
+    if (distance < -50) goToPrevious();
   };
 
   return (
-    <section
-      id="testimonials"
-      className="py-20 px-4 relative overflow-hidden bg-white"
-    >
-     
+    <section id="testimonials" className="py-20 px-4 relative overflow-hidden bg-white">
       {/* Dotted background */}
       <div
-        className="absolute inset-0 bg-[radial-gradient(#CCFF66_2px,transparent_2px)] [background-size:20px_20px]"
+        className="absolute inset-0 bg-[radial-gradient(var(--color-lime)_2px,transparent_2px)] [background-size:20px_20px]"
         style={{
           WebkitMaskImage:
             "linear-gradient(135deg, black 0%, transparent 40%, transparent 60%, black 100%)",
@@ -126,46 +96,33 @@ const Testimonials = () => {
         }}
       />
 
-      {/* Floating animated icons */}
+      {/* Floating icons */}
       <div className="absolute inset-0 overflow-hidden z-0">
-        <div
-          className="spray-icon top-8 left-8 w-28 h-28 sm:w-36 sm:h-36 md:w-44 md:h-44 lg:w-52 lg:h-52  rounded-full flex items-center justify-center"
-          style={{ animationDelay: "0s" }}
-        >
-          <FaMagic className="w-1/2 h-1/2 text-pink-500" />
+        <div className="absolute top-8 left-8 w-28 h-28 sm:w-36 sm:h-36 md:w-44 md:h-44 lg:w-52 lg:h-52 rounded-full flex items-center justify-center">
+          <FaMagic className="w-1/2 h-1/2 text-pink" />
         </div>
-        
-        <FaShieldAlt
-          className="bg-icon w-24 h-24 bottom-8 right-8"
-          style={{ animationDelay: "15s" }}
-        />
+        <FaShieldAlt className="bg-icon w-24 h-24 bottom-8 right-8 text-pink" />
       </div>
 
       {/* Main content */}
       <div className="relative z-10 max-w-7xl mx-auto text-center">
-        <h2 className="text-4xl font-bold mb-6" style={{ color: PINK }}>
+        <h2 className="text-4xl font-bold mb-6 text-pink">
           What Our Customers Say
         </h2>
         <p className="text-lg mb-12 text-gray-700">
           Don't just take our word for it – hear from our satisfied customers
         </p>
 
-        {/* Testimonials Container */}
         <div className="relative">
           {/* Navigation Arrows */}
           <button
             onClick={goToPrevious}
             disabled={currentIndex === 0}
             className={`absolute left-0 top-1/2 -translate-y-1/2 z-20 p-2 sm:p-3 rounded-full shadow-lg transition-all duration-300 ${
-              currentIndex === 0 
-                ? 'opacity-50 cursor-not-allowed bg-gray-300' 
-                : 'hover:scale-110 hover:shadow-xl'
+              currentIndex === 0
+                ? "opacity-50 cursor-not-allowed bg-gray-300"
+                : "bg-pink text-white hover:scale-110 hover:shadow-xl"
             }`}
-            style={{
-              backgroundColor: currentIndex === 0 ? '#ccc' : PINK,
-              color: 'white',
-              transform: 'translateX(-50%) translateY(-50%)',
-            }}
           >
             <FaChevronLeft className="w-4 h-4 sm:w-5 sm:h-5" />
           </button>
@@ -174,21 +131,16 @@ const Testimonials = () => {
             onClick={goToNext}
             disabled={currentIndex >= maxIndex}
             className={`absolute right-0 top-1/2 -translate-y-1/2 z-20 p-2 sm:p-3 rounded-full shadow-lg transition-all duration-300 ${
-              currentIndex >= maxIndex 
-                ? 'opacity-50 cursor-not-allowed bg-gray-300' 
-                : 'hover:scale-110 hover:shadow-xl'
+              currentIndex >= maxIndex
+                ? "opacity-50 cursor-not-allowed bg-gray-300"
+                : "bg-pink text-white hover:scale-110 hover:shadow-xl"
             }`}
-            style={{
-              backgroundColor: currentIndex >= maxIndex ? '#ccc' : PINK,
-              color: 'white',
-              transform: 'translateX(50%) translateY(-50%)',
-            }}
           >
             <FaChevronRight className="w-4 h-4 sm:w-5 sm:h-5" />
           </button>
 
           {/* Testimonials Slider */}
-          <div 
+          <div
             className="overflow-hidden mx-8 sm:mx-12"
             onTouchStart={handleTouchStart}
             onTouchMove={handleTouchMove}
@@ -200,36 +152,18 @@ const Testimonials = () => {
                 transform: `translateX(-${currentIndex * (100 / itemsPerView)}%)`,
               }}
             >
-              {testimonials.map((t, index) => (
-                <div
-                  key={index}
-                  className="flex-shrink-0 px-3"
-                  style={{
-                    width: `${100 / itemsPerView}%`,
-                  }}
-                >
-                  <div
-                    className="h-full p-4 sm:p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300"
-                    style={{
-                      backgroundColor: LIME,
-                      border: `2px solid ${PINK}`,
-                      minHeight: '280px',
-                    }}
-                  >
+              {testimonials.map((t, idx) => (
+                <div key={idx} className="flex-shrink-0 px-3" style={{ width: `${100 / itemsPerView}%` }}>
+                  <div className="h-full p-4 sm:p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 bg-lime border-2 border-pink min-h-[280px] flex flex-col">
                     <div className="flex flex-col items-center mb-4">
-                      <h4
-                        className="text-lg sm:text-xl mb-2 text-center font-semibold"
-                        style={{ color: PINK }}
-                      >
-                        {t.name}
-                      </h4>
-                      <div className="flex mb-2" style={{ color: PINK }}>
+                      <h4 className="text-lg sm:text-xl mb-2 text-center font-semibold text-pink">{t.name}</h4>
+                      <div className="flex mb-2 text-pink">
                         {[...Array(5)].map((_, i) => (
                           <FaStar key={i} className="w-4 h-4" />
                         ))}
                       </div>
                     </div>
-                    <p className="italic text-center text-black text-sm sm:text-base leading-relaxed">
+                    <p className="italic text-center text-black text-sm sm:text-base leading-relaxed flex-1">
                       {t.text}
                     </p>
                   </div>
@@ -238,23 +172,20 @@ const Testimonials = () => {
             </div>
           </div>
 
-          {/* Dots Indicator */}
+          {/* Dots */}
           <div className="flex justify-center mt-6 space-x-2">
-            {Array.from({ length: maxIndex + 1 }).map((_, index) => (
+            {Array.from({ length: maxIndex + 1 }).map((_, idx) => (
               <button
-                key={index}
-                onClick={() => setCurrentIndex(index)}
+                key={idx}
+                onClick={() => setCurrentIndex(idx)}
                 className={`w-2 h-2 sm:w-3 sm:h-3 rounded-full transition-all duration-300 ${
-                  currentIndex === index ? 'scale-125' : 'hover:scale-110'
+                  currentIndex === idx ? "scale-125 bg-pink" : "hover:scale-110 bg-gray-300"
                 }`}
-                style={{
-                  backgroundColor: currentIndex === index ? PINK : '#ccc',
-                }}
               />
             ))}
           </div>
 
-          {/* Current Position Indicator */}
+          {/* Current Position */}
           <p className="text-center mt-4 text-sm text-gray-600">
             {currentIndex + 1} of {maxIndex + 1}
           </p>

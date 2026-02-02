@@ -1,47 +1,38 @@
-
-
 import { FaCarCrash } from "react-icons/fa";
 import { GiCarDoor } from "react-icons/gi";
 
 export default function WhyChooseUs() {
-  const PINK = "#E066E6";
-  const LIME = "#CCFF66";
-
   const services = [
     {
-      icon: <GiCarDoor className="text-[40px]" />,
+      icon: <GiCarDoor className="text-[40px] text-pink" />,
       title: "Paintless Dent Removal",
       desc: "Flawless, expert repairs to restore your car’s perfect finish.",
     },
     {
-       image: "/spray.png", // ✅ use your image here
+      image: "/spray.png",
       title: "Professional Painting",
       desc: "Professional paintwork designed to match or refresh your vehicle.",
     },
     {
-      image: "/spray.png", // ✅ use your image here
+      image: "/spray.png",
       title: "Spray Gun Works",
       desc: "Trusted technicians keeping your car in shape.",
     },
     {
-      icon: <FaCarCrash className="text-[40px]" />,
+      icon: <FaCarCrash className="text-[40px] text-pink" />,
       title: "Damage Repairs",
       desc: "Quick, reliable fixes for minor accident damage.",
     },
   ];
-
-
 
   return (
     <section
       id="why-choose-us"
       className="py-20 bg-white relative overflow-hidden"
     >
-     
-
-      {/* ✅ Dotted background */}
+      {/* Dotted background */}
       <div
-        className="absolute inset-0 bg-[radial-gradient(#CCFF66_2px,transparent_2px)] [background-size:20px_20px]"
+        className="absolute inset-0 bg-[radial-gradient(var(--color-lime)_2px,transparent_2px)] [background-size:20px_20px]"
         style={{
           WebkitMaskImage:
             "linear-gradient(135deg, black 0%, transparent 40%, transparent 60%, black 100%)",
@@ -54,25 +45,22 @@ export default function WhyChooseUs() {
         }}
       />
 
-      {/* ✅ Floating animated icons */}
+      {/* Floating icons */}
       <div className="absolute inset-0 overflow-hidden z-0">
         <GiCarDoor
-          className="bg-icon w-20 h-20 top-8 left-8"
+          className="bg-icon w-20 h-20 top-8 left-8 text-pink"
           style={{ animationDelay: "0s" }}
         />
         <FaCarCrash
-          className="bg-icon w-24 h-24 bottom-8 right-8"
+          className="bg-icon w-24 h-24 bottom-8 right-8 text-pink"
           style={{ animationDelay: "15s" }}
         />
       </div>
 
-      {/* ✅ Main content */}
+      {/* Main content */}
       <div className="max-w-6xl mx-auto px-6 text-center relative z-10">
         {/* Header */}
-        <h2
-          className="text-4xl font-bold text-gray-900 mb-4"
-          data-aos="fade-up"
-        >
+        <h2 className="text-4xl font-bold text-pink mb-4" data-aos="fade-up">
           Why Choose Us
         </h2>
         <p
@@ -89,23 +77,14 @@ export default function WhyChooseUs() {
           {services.map((service, index) => (
             <div
               key={index}
-              className="flex flex-col items-center p-6 rounded-2xl border hover:shadow-lg transition-all duration-300"
-              style={{
-                borderColor: PINK,
-              }}
+              className="flex flex-col items-center p-6 rounded-2xl border border-pink hover:shadow-pink transition-all duration-300"
               data-aos="zoom-in-up"
               data-aos-delay={index * 150}
             >
-              <div
-                className="w-[80px] h-[80px] rounded-full mb-4 flex items-center justify-center"
-                style={{
-                  backgroundColor: LIME,
-                  color: PINK,
-                }}
-              >
+              <div className="w-[80px] h-[80px] rounded-full mb-4 flex items-center justify-center bg-lime">
                 {service.image ? (
                   <img
-                     loading="lazy"
+                    loading="lazy"
                     src={service.image}
                     alt={service.title}
                     className="w-[65px] h-[65px] object-contain"

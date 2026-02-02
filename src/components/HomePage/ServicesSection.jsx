@@ -16,28 +16,28 @@ const services = [
     title: "Alloy Wheel Repair",
     desc: "Professional restoration of damaged alloy wheels, from minor scuffs to major damage.",
     href: "/services/alloy-wheel-repair",
-    icon: <GiCarWheel  className="h-6 w-6 text-[#E066E6]" />,
+    icon: <GiCarWheel  className="h-6 w-6 text-pink" />,
     chips: ["Scuff Repair", "Crack Welding", "Diamond Cut Cosmetic", "Color Matching"],
   },
   {
     title: "Bodywork Scuffs, Cracks and Dents",
     desc: "Expert repair of vehicle bodywork damage, restoring your car to its original condition.",
     href: "/services/bodywork-repair",
-    icon: <FaCar className="h-6 w-6 text-[#E066E6]" />,
+    icon: <FaCar className="h-6 w-6 text-pink" />,
     chips: ["Dent Removal", "Scratch Repair", "Panel Beating", "Surface Preparation", "Smart Repair"],
   },
   {
     title: "Textured Plastic Repairs",
     desc: "Specialized repair and restoration of textured plastic components and trim.",
     href: "/services/textured-plastic-repair",
-    icon: <FaMagic className="h-6 w-6 text-[#E066E6]" />,
+    icon: <FaMagic className="h-6 w-6 text-pink" />,
     chips: ["Trim Restoration", "Texture Matching", "Color Restoration", "UV Protection"],
   },
   {
     title: "Panel Damage",
     desc: "Comprehensive panel repair services for all types of vehicle damage.",
     href: "/services/panel-damage",
-    icon: <FaShieldAlt className="h-6 w-6 text-[#E066E6]" />,
+    icon: <FaShieldAlt className="h-6 w-6 text-pink" />,
     chips: ["Panel Replacement", "Structural Repair", "Alignment", "Reinforcement"],
   },
   {
@@ -51,7 +51,7 @@ const services = [
     title: "Quality Guarantee",
     desc: "All our work comes with a comprehensive warranty and satisfaction guarantee.",
     href: "/services/quality-guarantee",
-    icon: <FaCheckCircle className="h-6 w-6 text-[#E066E6]" />,
+    icon: <FaCheckCircle className="h-6 w-6 text-pink" />,
     chips: ["12 Month Warranty", "Satisfaction Guarantee", "Quality Assurance", "Follow-up Service"],
   },
 ];
@@ -100,7 +100,7 @@ export default function OurServices() {
             <article
               key={s.title}
               className="bg-white text-gray-900 flex flex-col justify-between rounded-xl border border-gray-200 shadow-sm
-                         hover:scale-105 hover:shadow-[0_8px_24px_rgba(224,102,230,0.35)] hover:ring-1 hover:ring-[#E066E6]/40 
+                         hover:scale-105 hover:shadow-[0_8px_24px_rgba(224,102,230,0.35)] hover:ring-1 hover:ring-pink/40 
                          transition-all duration-300 group relative z-10"
               data-aos="zoom-in-up"
               data-aos-delay={i * 100}
@@ -108,7 +108,7 @@ export default function OurServices() {
               {/* top section */}
               <div className="grid auto-rows-min items-start gap-1.5 px-6 py-6">
                 <div className="flex items-center gap-3 mb-3">
-                  <div className="p-2 bg-[#CCFF66]/40 rounded-lg group-hover:bg-[#CCFF66]/60 group-hover:scale-110 transition-all">
+                  <div className="p-2 bg-lime/40 rounded-lg group-hover:bg-lime/60 group-hover:scale-110 transition-all">
 
                     {/* FIX — if service has image, show that instead of icon */}
                     {s.image ? (
@@ -124,12 +124,12 @@ export default function OurServices() {
 
                   </div>
 
-                  <span className="inline-flex items-center justify-center rounded-md px-2 py-0.5 text-xs font-medium bg-[#E066E6] text-white">
+                  <span className="inline-flex items-center justify-center rounded-md px-2 py-0.5 text-xs font-medium bg-pink text-white">
                     Professional
                   </span>
                 </div>
 
-                <h3 className="text-xl font-bold group-hover:text-[#E066E6] transition-colors">
+                <h3 className="text-xl font-bold group-hover:text-pink transition-colors">
                   {s.title}
                 </h3>
 
@@ -143,7 +143,7 @@ export default function OurServices() {
                     <span
                       key={c}
                       className="inline-flex items-center justify-center rounded-md border px-2 py-0.5 text-xs font-medium
-                                 text-gray-900 border-[#E066E6]/40 hover:bg-[#CCFF66]/40 hover:scale-105 transition-transform"
+                                 text-gray-900 border-pink/40 hover:bg-lime/40 hover:scale-105 transition-transform"
                     >
                       {c}
                     </span>
@@ -157,8 +157,8 @@ export default function OurServices() {
                   <button
                     type="button"
                     className="w-full h-9 px-4 py-2 inline-flex items-center justify-center rounded-md text-sm font-medium
-                               bg-[#CCFF66] text-black hover:bg-[#E066E6] hover:text-white hover:scale-[1.02] transition-all
-                               focus:outline-none focus-visible:ring-2 focus-visible:ring-[#E066E6]/40"
+                               bg-lime text-black hover:bg-pink hover:text-white hover:scale-[1.02] transition-all
+                               focus:outline-none focus-visible:ring-2 focus-visible:ring-pink/40"
                   >
                     Learn More
                   </button>

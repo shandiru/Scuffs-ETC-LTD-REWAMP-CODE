@@ -4,8 +4,8 @@ import { FaCar, FaMagic, FaShieldAlt } from "react-icons/fa";
 
 
 export default function CredentialsSection() {
-  const PINK = "#E066E6";
-  const LIME = "#CCFF66";
+
+
 
 
 
@@ -50,8 +50,8 @@ export default function CredentialsSection() {
         {/* Section Title */}
         <div className="text-center mb-16" data-aos="fade-up">
           <h2
-            className="font-space-grotesk font-bold text-4xl md:text-5xl mb-4"
-            style={{ color: PINK }}
+            className="font-space-grotesk font-bold text-4xl md:text-5xl mb-4 text-pink"
+           
           >
             Our Credentials
           </h2>
@@ -71,8 +71,8 @@ export default function CredentialsSection() {
           <div className="space-y-8">
             {/* Card 1 */}
             <div
-              className="text-card-foreground flex flex-col gap-6 rounded-xl border py-6 shadow-sm bg-card"
-              style={{ borderColor: PINK }}
+              className="text-card-foreground flex flex-col gap-6 rounded-xl border border-pink py-6 shadow-sm bg-card"
+          
               data-aos="fade-right"
             >
               <div className="p-6">
@@ -117,8 +117,8 @@ export default function CredentialsSection() {
 
             {/* Card 2 */}
             <div
-              className="text-card-foreground flex flex-col gap-6 rounded-xl border py-6 shadow-sm bg-card"
-              style={{ borderColor: PINK }}
+              className="text-card-foreground flex flex-col gap-6 rounded-xl border border-pink py-6 shadow-sm bg-card"
+             
               data-aos="fade-right"
               data-aos-delay="150"
             >
@@ -135,7 +135,7 @@ export default function CredentialsSection() {
                       height="24"
                       viewBox="0 0 24 24"
                       fill="none"
-                      stroke={PINK}
+                      stroke="[var(--color-pink)]"
                       strokeWidth="2"
                       strokeLinecap="round"
                       strokeLinejoin="round"
@@ -162,8 +162,8 @@ export default function CredentialsSection() {
 
             {/* Card 3 */}
             <div
-              className="text-card-foreground flex flex-col gap-6 rounded-xl border py-6 shadow-sm bg-card"
-              style={{ borderColor: PINK }}
+              className="text-card-foreground flex flex-col gap-6 rounded-xl border border-pink py-6 shadow-sm bg-card"
+              
               data-aos="fade-right"
               data-aos-delay="300"
             >
@@ -180,7 +180,7 @@ export default function CredentialsSection() {
                       height="24"
                       viewBox="0 0 24 24"
                       fill="none"
-                      stroke={PINK}
+                      stroke="[var(--color-pink)]"
                       strokeWidth="2"
                       strokeLinecap="round"
                       strokeLinejoin="round"
@@ -214,19 +214,19 @@ export default function CredentialsSection() {
             data-aos-delay="200"
           >
             <div
-              className="bg-card rounded-lg p-6 shadow-lg border"
-              style={{ borderColor: PINK }}
+              className="bg-card rounded-lg p-6 shadow-lg border border-pink"
+             
             >
               <h3
-                className="font-space-grotesk font-bold text-xl text-center mb-4"
-                style={{ color: PINK }}
+                className="font-space-grotesk font-bold text-xl text-center mb-4  text-pink"
+               
               >
                 Official Certifications
               </h3>
               <div className="space-y-6">
                 <div
-                  className="relative aspect-[4/3] rounded-lg overflow-hidden border"
-                  style={{ borderColor: LIME }}
+                  className="relative aspect-[4/3] rounded-lg overflow-hidden border border-lime"
+                 
                   data-aos="zoom-in"
                 >
                   <img
@@ -237,8 +237,8 @@ export default function CredentialsSection() {
                   />
                 </div>
                 <div
-                  className="relative aspect-[4/3] rounded-lg overflow-hidden border"
-                  style={{ borderColor: LIME }}
+                  className="relative aspect-[4/3] rounded-lg overflow-hidden border border-lime"
+                  
                   data-aos="zoom-in"
                   data-aos-delay="200"
                 >

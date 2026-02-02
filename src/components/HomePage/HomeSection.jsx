@@ -39,8 +39,8 @@ export default function HomeSection() {
           data-aos="zoom-in"
           data-aos-delay="200"
         >
-          <span className="text-[#CCFF66]">Scuffs ETC</span>{" "}
-          <span className="text-[#E066E6]">LTD</span>
+          <span className="text-lime">Scuffs ETC</span>{" "}
+          <span className="text-pink">LTD</span>
         </h1>
 
         <p
@@ -61,7 +61,7 @@ export default function HomeSection() {
           <a
             href="#contact"
             className="inline-flex items-center justify-center gap-2 whitespace-nowrap font-medium transition-all
-                       shadow-xs h-10 rounded-md bg-[#E066E6] text-white hover:bg-[#b84dbf]
+                       shadow-xs h-10 rounded-md bg-pink text-white hover:bg-[#b84dbf]
                        font-dm-sans text-lg px-8 py-4"
           >
             Get a Free Quote
@@ -70,8 +70,8 @@ export default function HomeSection() {
           <a
             href="#gallery"
             className="inline-flex items-center justify-center gap-2 whitespace-nowrap font-medium transition-all
-                       border shadow-xs h-10 rounded-md border-[#CCFF66] text-[#CCFF66]
-                       hover:bg-[#CCFF66] hover:text-black
+                       border shadow-xs h-10 rounded-md border-lime text-lime
+                       hover:bg-lime hover:text-black
                        font-dm-sans text-lg px-8 py-4 bg-transparent"
           >
             View Our Work

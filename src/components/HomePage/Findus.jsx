@@ -4,7 +4,7 @@ import { FaMapMarkerAlt, FaPhoneAlt } from "react-icons/fa";
 
 
 const FindUs = () => {
-  const PINK = "#E066E6";
+
 
 
 

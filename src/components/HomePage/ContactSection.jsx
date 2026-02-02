@@ -1,5 +1,5 @@
 
-import React, { useState} from "react";
+import React, { useState } from "react";
 import {
   FaPhoneAlt,
   FaEnvelope,
@@ -23,8 +23,8 @@ export default function ContactSection() {
 
   const [errors, setErrors] = useState({});
 
-  const PINK = "#E066E6";
-  const LIME = "#CCFF66";
+
+
   const phoneRegex = /^(?:\+44|0)[1-9]\d{8,9}$/;
 
 
@@ -85,8 +85,8 @@ export default function ContactSection() {
 
   return (
     <section id="contact" className="py-20 bg-background relative overflow-hidden">
-   
-   
+
+
 
       {/* 🟢 Dotted pattern */}
       <div
@@ -111,8 +111,8 @@ export default function ContactSection() {
       <div className="container mx-auto px-4 md:px-20 relative z-10">
         <div className="text-center mb-16">
           <h2
-            className="font-bold text-4xl md:text-5xl mb-4"
-            style={{ color: PINK }}
+            className="font-bold text-4xl md:text-5xl mb-4 text-pink"
+
           >
             Get In Touch
           </h2>
@@ -147,17 +147,17 @@ export default function ContactSection() {
               {
                 label: "Hours",
                 icon: <FaRegClock />,
-               value: "Mon–Thu: 8AM–3PM\nFri: 8AM–3AM\nSat: Closed\nSun: Closed",
+                value: "Mon–Thu: 8AM–3PM\nFri: 8AM–3AM\nSat: Closed\nSun: Closed",
 
                 multiLine: true,
               },
             ].map((item, index) => (
               <div key={index} className="flex items-center space-x-4">
                 <div
-                  className="w-10 h-10 rounded-lg flex items-center justify-center"
-                  style={{ backgroundColor: `${LIME}40` }}
+                  className="w-10 h-10 rounded-lg flex items-center justify-center bg-lime/40"
+
                 >
-                  <div style={{ color: PINK }}>{item.icon}</div>
+                  <div className="text-pink">{item.icon}</div>
                 </div>
 
                 <div>
@@ -168,8 +168,8 @@ export default function ContactSection() {
                       href={item.href}
                       target="_blank"
                       rel="noreferrer"
-                      className="hover:underline whitespace-pre-line"
-                      style={{ color: PINK }}
+                      className="hover:underline whitespace-pre-line text-pink"
+
                     >
                       {item.value}
                     </a>
@@ -201,7 +201,7 @@ export default function ContactSection() {
                     value={formData.firstName}
                     onChange={handleChange}
                     placeholder="John"
-                    className="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#E066E6]"
+                    className="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-pink"
                   />
                   {errors.firstName && <p className="text-red-500 text-sm">{errors.firstName}</p>}
                 </div>
@@ -213,7 +213,7 @@ export default function ContactSection() {
                     value={formData.lastName}
                     onChange={handleChange}
                     placeholder="Doe"
-                    className="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#E066E6]"
+                    className="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-pink"
                   />
                   {errors.lastName && <p className="text-red-500 text-sm">{errors.lastName}</p>}
                 </div>
@@ -227,7 +227,7 @@ export default function ContactSection() {
                   name="email"
                   value={formData.email}
                   onChange={handleChange}
-                  className="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#E066E6]"
+                  className="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-pink"
                 />
                 {errors.email && <p className="text-red-500 text-sm">{errors.email}</p>}
               </div>
@@ -239,7 +239,7 @@ export default function ContactSection() {
                   name="phone"
                   value={formData.phone}
                   onChange={handleChange}
-                  className="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#E066E6]"
+                  className="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-pink"
                 />
                 {errors.phone && <p className="text-red-500 text-sm">{errors.phone}</p>}
               </div>
@@ -253,7 +253,7 @@ export default function ContactSection() {
                     name="date"
                     value={formData.date}
                     onChange={handleChange}
-                    className="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#E066E6]"
+                    className="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-pink"
                   />
                   <input
                     type="time"
@@ -262,7 +262,7 @@ export default function ContactSection() {
                     min="09:00"
                     max="13:00"
                     onChange={handleChange}
-                    className="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#E066E6]"
+                    className="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-pink"
                   />
                 </div>
 
@@ -280,7 +280,7 @@ export default function ContactSection() {
                   name="service"
                   value={formData.service}
                   onChange={handleChange}
-                  className="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#E066E6] bg-white text-gray-800"
+                  className="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-pink bg-white text-gray-800"
                 >
                   <option value="">Select a service</option>
                   <option>Alloy Wheel Repair</option>
@@ -301,7 +301,7 @@ export default function ContactSection() {
                   value={formData.message}
                   onChange={handleChange}
                   rows={3}
-                  className="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#E066E6]"
+                  className="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-pink"
                 />
                 {errors.message && <p className="text-red-500 text-sm">{errors.message}</p>}
               </div>
@@ -309,14 +309,15 @@ export default function ContactSection() {
               {/* Button */}
               <button
                 type="submit"
-                className="w-full py-3 rounded-md font-semibold transition-all duration-300"
-                style={{
-                  backgroundImage: `linear-gradient(90deg, ${PINK}, ${LIME})`,
-                  color: "#000",
-                }}
+                className="
+    w-full py-3 rounded-md font-semibold transition-all duration-300
+    bg-gradient-to-r from-pink to-lime
+    text-black
+  "
               >
                 Book My Quote
               </button>
+
 
               <p className="text-xs text-center dark:text-gray-300">
                 By submitting this form, you agree to us processing your details to respond to your enquiry. Your information is handled securely and in line with our Privacy Policy.
