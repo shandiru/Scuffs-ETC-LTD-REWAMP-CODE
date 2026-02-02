@@ -20,31 +20,7 @@ const WarrantyClaimSection = () => {
       className="relative py-16 px-4 overflow-hidden"
       style={{ backgroundColor: `${LIME}30` }}
     >
-      {/* 🔹 Background styles */}
-      <style>
-        {`
-          @keyframes spinSlow {
-            0%   { transform: rotate(0deg); opacity: 0.25; }
-            100% { transform: rotate(360deg); opacity: 0.25; }
-          }
-          .bg-icon {
-            position: absolute;
-            color: ${PINK};
-            animation: spinSlow 42s linear infinite;
-            filter: drop-shadow(0 0 12px rgba(224,102,230,0.4));
-            z-index: 0;
-            pointer-events: none;
-          }
-          @media (max-width: 768px) {
-            .bg-icon {
-              width: 2rem !important;
-              height: 2rem !important;
-              animation-duration: 24s;
-              opacity: 0.15;
-            }
-          }
-        `}
-      </style>
+     
 
       {/* ✅ Dotted lime background */}
       <div

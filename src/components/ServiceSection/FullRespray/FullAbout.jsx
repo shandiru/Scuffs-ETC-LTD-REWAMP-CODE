@@ -13,31 +13,7 @@ const FullRespray = () => {
       className="relative py-12 px-6 overflow-hidden"
       style={{ backgroundColor: `${LIME}20` }}
     >
-      <style>
-        {`
-          @keyframes spinIcon {
-            0%   { transform: rotate(0deg); opacity: 0.3; }
-            100% { transform: rotate(360deg); opacity: 0.3; }
-          }
-          .bg-icon {
-            position: absolute;
-            color: ${PINK} !important;
-            animation: spinIcon 25s linear infinite;
-            filter: drop-shadow(0 0 14px rgba(224,102,230,0.6));
-            z-index: 0;
-            pointer-events: none;
-          }
-          @media (max-width: 768px) {
-            .bg-icon {
-              width: 2rem !important;
-              height: 2rem !important;
-              animation-duration: 15s;
-              opacity: 0.15;
-            }
-          }
-        `}
-      </style>
-
+      
       {/* ✅ Dotted overlay background */}
       <div
         className="absolute inset-0 bg-[radial-gradient(#CCFF66_2px,transparent_2px)] [background-size:20px_20px]"

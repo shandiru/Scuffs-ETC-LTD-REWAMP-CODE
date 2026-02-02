@@ -61,33 +61,7 @@ export default function OurServices() {
 
   return (
     <section id="services" className="relative py-16 px-4 scroll-m-10 overflow-hidden">
-      {/* Background animations + dotted overlay */}
-      <style>
-        {`
-          @keyframes pulseSpin {
-            0%   { transform: rotate(0deg) scale(0.8); opacity: 0.2; }
-            40%  { transform: rotate(180deg) scale(1.6); opacity: 1; }
-            70%  { transform: rotate(270deg) scale(1.2); opacity: 0.7; }
-            100% { transform: rotate(360deg) scale(0.8); opacity: 0.2; }
-          }
-          .bg-icon {
-            position: absolute;
-            color: #E066E6 !important;
-            animation: pulseSpin 25s ease-in-out infinite;
-            filter: drop-shadow(0 0 18px rgba(224,102,230,0.8));
-            z-index: 0;
-            pointer-events: none;
-          }
-          .spray-icon {
-            position: absolute;
-            animation: pulseSpin 25s ease-in-out infinite;
-            filter: drop-shadow(0 0 25px rgba(224,102,230,0.9));
-            z-index: 0;
-            pointer-events: none;
-          }
-        `}
-      </style>
-
+      
       {/* dotted BG */}
       <div
         className="absolute inset-0 bg-[radial-gradient(#CCFF66_2px,transparent_2px)] [background-size:20px_20px]"

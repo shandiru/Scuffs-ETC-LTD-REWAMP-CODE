@@ -110,41 +110,7 @@ const Testimonials = () => {
       id="testimonials"
       className="py-20 px-4 relative overflow-hidden bg-white"
     >
-      {/* Background styles */}
-      <style>
-        {`
-          @keyframes pulseSpin {
-            0%   { transform: rotate(0deg) scale(0.8); opacity: 0.2; }
-            40%  { transform: rotate(180deg) scale(1.4); opacity: 1; }
-            70%  { transform: rotate(270deg) scale(1.1); opacity: 0.7; }
-            100% { transform: rotate(360deg) scale(0.8); opacity: 0.2; }
-          }
-          .bg-icon {
-            position: absolute;
-            color: ${PINK} !important;
-            animation: pulseSpin 25s ease-in-out infinite;
-            filter: drop-shadow(0 0 18px rgba(224,102,230,0.8));
-            z-index: 0;
-            pointer-events: none;
-          }
-          .spray-icon {
-            position: absolute;
-            animation: pulseSpin 20s ease-in-out infinite;
-            filter: drop-shadow(0 0 18px rgba(204,255,102,0.8));
-            z-index: 0;
-            pointer-events: none;
-          }
-          @media (max-width: 768px) {
-            .bg-icon, .spray-icon {
-              width: 2rem !important;
-              height: 2rem !important;
-              animation-duration: 18s;
-              opacity: 0.15;
-            }
-          }
-        `}
-      </style>
-
+     
       {/* Dotted background */}
       <div
         className="absolute inset-0 bg-[radial-gradient(#CCFF66_2px,transparent_2px)] [background-size:20px_20px]"

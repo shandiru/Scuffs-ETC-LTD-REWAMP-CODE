@@ -12,30 +12,7 @@ const ServiceCards = () => {
       className="relative w-full py-16 px-4 overflow-hidden"
       style={{ backgroundColor: "#F9FFFA" }}
     >
-      <style>
-        {`
-          @keyframes spinSlow {
-            0%   { transform: rotate(0deg); opacity: 0.4; }
-            100% { transform: rotate(360deg); opacity: 0.4; }
-          }
-          .bg-icon {
-            position: absolute;
-            color: ${PINK} !important;
-            animation: spinSlow 38s linear infinite;
-            filter: drop-shadow(0 0 15px rgba(224,102,230,0.5));
-            z-index: 0;
-            pointer-events: none;
-          }
-          @media (max-width: 768px) {
-            .bg-icon {
-              width: 2rem !important;
-              height: 2rem !important;
-              animation-duration: 22s;
-              opacity: 0.2;
-            }
-          }
-        `}
-      </style>
+    
 
       {/* ✅ Dotted background */}
       <div
