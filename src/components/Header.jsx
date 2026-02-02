@@ -1,4 +1,4 @@
-"use client";
+
 import React, { useEffect, useRef, useState } from "react";
 import { Menu, X, ChevronDown } from "lucide-react";
 import { HashLink } from "react-router-hash-link";

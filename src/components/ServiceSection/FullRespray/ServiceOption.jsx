@@ -1,5 +1,5 @@
 // File: ServiceOptions.jsx
-"use client";
+
 import React from "react";
 import { FaClock, FaShieldAlt } from "react-icons/fa";
 

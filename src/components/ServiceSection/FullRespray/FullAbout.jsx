@@ -1,5 +1,5 @@
 // File: FullRespray.jsx
-"use client";
+
 import React from "react";
 import { FiCheckCircle } from "react-icons/fi";
 import { FaPalette, FaShieldAlt } from "react-icons/fa";
@@ -104,6 +104,7 @@ const FullRespray = () => {
         {/* Right Image */}
         <div className="flex-1">
           <img
+             loading="lazy"
             src="/full.png" // Replace with your actual image
             alt="Vehicle Transformation"
             className="w-full h-72 object-cover rounded-lg shadow-lg transition-transform duration-500 hover:scale-105"

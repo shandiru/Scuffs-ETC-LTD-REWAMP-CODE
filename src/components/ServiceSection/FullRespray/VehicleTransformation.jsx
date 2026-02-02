@@ -1,5 +1,5 @@
 // File: VehicleTransformation.jsx
-"use client";
+
 import React from "react";
 import { FaPalette, FaStar, FaPhoneAlt } from "react-icons/fa";
 import { PHONE_NUMBER, PHONE_NUMBER_FORMATTED } from '../../../Data/contact';

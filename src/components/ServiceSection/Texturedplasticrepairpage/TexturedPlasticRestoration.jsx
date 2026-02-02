@@ -1,5 +1,5 @@
 // File: TexturedPlasticRestoration.jsx
-"use client";
+
 import {
   FaCheckCircle,
   FaClock,
@@ -116,6 +116,7 @@ export default function TexturedPlasticRestoration() {
             style={{ backgroundColor: `${LIME}30` }}
           >
             <img
+               loading="lazy"
               src="/textured.png"
               alt="Textured plastic repair process"
               className="w-full h-64 object-cover rounded-lg"

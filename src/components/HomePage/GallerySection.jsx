@@ -111,6 +111,7 @@ export default function GallerySection() {
         <img
           src="/spray.png"
           alt="Spray Gun Background"
+          loading="lazy"
           className="spray-icon top-8 left-8 w-28 h-28 sm:w-36 sm:h-36 md:w-44 md:h-44 lg:w-52 lg:h-52"
           style={{ animationDelay: "0s" }}
         />

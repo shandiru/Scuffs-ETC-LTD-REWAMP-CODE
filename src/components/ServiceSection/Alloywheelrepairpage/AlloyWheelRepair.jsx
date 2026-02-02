@@ -1,5 +1,5 @@
 // File: AlloyWheelRepair.jsx
-"use client";
+
 import {
   FaCheckCircle,
   FaClock,
@@ -112,6 +112,7 @@ export default function AlloyWheelRepair() {
 
           <div className="bg-gray-100 rounded-lg p-8">
             <img
+               loading="lazy"
               alt="Alloy wheel repair process"
               className="w-full h-64 object-cover rounded-lg"
               src="/alloy.jpg"

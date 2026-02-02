@@ -1,5 +1,5 @@
 // File: PaintProcess.jsx
-"use client";
+
 import React from "react";
 import { FaPalette, FaShieldAlt } from "react-icons/fa";
 

@@ -1,4 +1,4 @@
-"use client";
+
 import React, { useEffect } from "react";
 import { FaCarCrash } from "react-icons/fa";
 import { GiCarDoor } from "react-icons/gi";
@@ -141,6 +141,7 @@ export default function WhyChooseUs() {
               >
                 {service.image ? (
                   <img
+                     loading="lazy"
                     src={service.image}
                     alt={service.title}
                     className="w-[65px] h-[65px] object-contain"

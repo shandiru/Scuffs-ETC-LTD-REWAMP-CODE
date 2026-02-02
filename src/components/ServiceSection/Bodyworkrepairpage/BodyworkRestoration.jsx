@@ -1,5 +1,5 @@
 // File: BodyworkRestoration.jsx
-"use client";
+
 import {
   FaCheckCircle,
   FaClock,
@@ -117,6 +117,7 @@ export default function BodyworkRestoration() {
             style={{ backgroundColor: `${LIME}30` }}
           >
             <img
+               loading="lazy"
               src="/body.png"
               alt="Bodywork repair process"
               className="w-full h-64 object-cover rounded-lg"

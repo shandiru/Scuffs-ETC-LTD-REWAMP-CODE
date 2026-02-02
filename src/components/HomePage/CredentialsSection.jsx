@@ -1,4 +1,4 @@
-"use client";
+
 import React, { useEffect } from "react";
 import { FaWrench, FaCar, FaMagic, FaShieldAlt } from "react-icons/fa";
 import AOS from "aos";
@@ -70,6 +70,7 @@ export default function CredentialsSection() {
       <img
           src="/spray.png"
           alt="Spray Gun Background"
+          loading="lazy"
           className="spray-icon top-8 left-8 w-28 h-28 sm:w-36 sm:h-36 md:w-44 md:h-44 lg:w-52 lg:h-52"
           style={{ animationDelay: "0s" }}
         />
@@ -265,6 +266,7 @@ export default function CredentialsSection() {
                   <img
                     alt="Best Business of 2025 - ThreeBest Rated Excellence Award"
                     className="object-contain w-full h-full"
+                    loading="lazy"
                     src="/certificate1.png"
                   />
                 </div>
@@ -277,6 +279,7 @@ export default function CredentialsSection() {
                   <img
                     alt="Certificate of Excellence 2025 - Top 3 Car Body Shops Sheffield"
                     className="object-contain w-full h-full"
+                    loading="lazy"
                     src="/certificate2.png"
                   />
                 </div>

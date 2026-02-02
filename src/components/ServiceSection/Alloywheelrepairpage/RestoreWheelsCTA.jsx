@@ -1,5 +1,5 @@
 // File: RestoreWheelsCTA.jsx
-"use client";
+
 import { HashLink } from "react-router-hash-link";
 import { PHONE_NUMBER, PHONE_NUMBER_FORMATTED } from '../../../Data/contact';
 

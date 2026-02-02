@@ -1,4 +1,4 @@
-"use client";
+
 import React, { useEffect } from "react";
 import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope, FaRegClock } from "react-icons/fa";
 import AOS from "aos";

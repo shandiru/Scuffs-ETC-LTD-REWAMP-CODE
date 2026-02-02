@@ -1,5 +1,5 @@
 // File: PaintOptions.jsx
-"use client";
+
 import React from "react";
 import { FiCheckCircle } from "react-icons/fi";
 import { FaPalette, FaCompactDisc } from "react-icons/fa";

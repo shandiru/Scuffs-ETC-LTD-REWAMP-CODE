@@ -1,4 +1,4 @@
-"use client";
+
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -42,6 +42,7 @@ export default function HomeSection() {
           alt="Scuffs ETC LTD Logo"
           className="mx-auto mb-6 w-40 md:w-56"
           data-aos="fade-down"
+         loading="lazy"
         />
 
         <h1

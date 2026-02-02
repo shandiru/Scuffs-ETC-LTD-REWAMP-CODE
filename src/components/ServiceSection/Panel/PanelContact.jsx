@@ -1,5 +1,5 @@
 // File: ServiceCards.jsx
-"use client";
+
 import React from "react";
 import { FaClock, FaShieldAlt, FaStar, FaTools, FaCarCrash } from "react-icons/fa";
 

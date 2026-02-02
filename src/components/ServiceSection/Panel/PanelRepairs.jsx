@@ -1,5 +1,5 @@
 // File: PanelRepairs.jsx
-"use client";
+
 import React from "react";
 import { FiCheckCircle } from "react-icons/fi";
 import { FaCarCrash, FaTools, FaHammer, FaRulerCombined } from "react-icons/fa";

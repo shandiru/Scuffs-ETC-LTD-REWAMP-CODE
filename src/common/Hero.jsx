@@ -1,4 +1,4 @@
-"use client";
+
 
 import { ArrowLeft } from "lucide-react";
 import { HashLink } from "react-router-hash-link";

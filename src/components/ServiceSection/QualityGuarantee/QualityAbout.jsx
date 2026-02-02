@@ -155,6 +155,7 @@ const QualityAbout = () => {
             style={{ backgroundColor: `${LIME}20` }}
           >
             <img
+               loading="lazy"
               alt="Quality guarantee documentation"
               className="w-full h-74 object-cover rounded-lg shadow-md"
               src="/quality.png"

@@ -1,5 +1,5 @@
 // File: PanelRestoration.jsx
-"use client";
+
 import React from "react";
 import { FiCheckCircle } from "react-icons/fi";
 import { FaCarCrash, FaTools, FaHammer, FaRulerCombined } from "react-icons/fa";
@@ -104,6 +104,7 @@ const PanelRestoration = () => {
           style={{ backgroundColor: `${LIME}50` }}
         >
           <img
+             loading="lazy"
             alt="Panel damage repair process"
             className="w-full h-64 object-cover rounded-lg shadow-md"
             src="/panel.png"

@@ -106,6 +106,7 @@ export default function Footer() {
                     <img
                       src="/spray.png"
                       alt="Spray Gun Icon"
+                      loading="lazy"
                       className="w-12 h-12 object-contain opacity-90 group-hover:opacity-100 group-hover:scale-110 transition-all duration-300"
                     />
                     <div

@@ -1,5 +1,5 @@
 // File: OurServices.jsx
-"use client";
+
 import React, { useEffect } from "react";
 import {
   FaCar,
@@ -113,7 +113,7 @@ export default function OurServices() {
 
       {/* animated icons */}
       <div className="absolute inset-0 overflow-hidden z-0">
-        <img src="/spray.png" className="spray-icon top-8 left-8 w-36 h-36" />
+        <img src="/spray.png" className="spray-icon top-8 left-8 w-36 h-36" loading="lazy" />
         <FaCar className="bg-icon w-24 h-24 top-1/4 right-8" />
         <FaMagic className="bg-icon w-20 h-20 bottom-1/4 left-8" />
         <FaShieldAlt className="bg-icon w-24 h-24 bottom-8 right-8" />
@@ -147,6 +147,7 @@ export default function OurServices() {
                     {/* FIX — if service has image, show that instead of icon */}
                     {s.image ? (
                       <img
+                        loading="lazy"
                         src={s.image}
                         alt={s.title}
                         className="h-7 w-7 object-contain"
