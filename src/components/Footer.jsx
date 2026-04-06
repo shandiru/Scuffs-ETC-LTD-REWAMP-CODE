@@ -3,7 +3,7 @@ import { FaFacebookF, FaInstagram } from "react-icons/fa";
 import { COLORS } from "../theme/colors";
 export default function Footer() {
   const PINK = COLORS.primary;
-
+  const LIME = COLORS.secondary;
 
   // 🧩 Combined services list
   const services = [
@@ -23,7 +23,7 @@ export default function Footer() {
   ];
 
   return (
-    <footer className="py-12 text-black bg-[#CCFF66]">
+    <footer className="py-12 text-black bg-[${LIME}]">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
           
@@ -59,7 +59,7 @@ export default function Footer() {
                 href="https://web.facebook.com/scuffs.etc?_rdc=1&_rdr#"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-white bg-[#E066E6] p-3 rounded-full hover:scale-110 transition-transform duration-200"
+                className="text-white bg-[${COLORS.primary}] p-3 rounded-full hover:scale-110 transition-transform duration-200"
               >
                 <FaFacebookF size={22} />
               </a>
@@ -69,7 +69,7 @@ export default function Footer() {
                 href="https://www.instagram.com/scuffs_etc_ltd"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-white bg-[#E066E6] p-3 rounded-full hover:scale-110 transition-transform duration-200"
+                className="text-white bg-[${COLORS.primary}] p-3 rounded-full hover:scale-110 transition-transform duration-200"
               >
                 <FaInstagram size={22} />
               </a>
@@ -79,7 +79,7 @@ export default function Footer() {
                 href="https://www.tiktok.com/@scuffsetc"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-white bg-[#E066E6] p-3 rounded-full hover:scale-110 transition-transform duration-200"
+                className="text-white bg-[${COLORS.primary}] p-3 rounded-full hover:scale-110 transition-transform duration-200"
               >
                 <svg
                   viewBox="0 0 24 24"

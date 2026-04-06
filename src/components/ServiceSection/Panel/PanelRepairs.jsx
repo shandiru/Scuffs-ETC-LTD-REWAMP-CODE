@@ -3,7 +3,7 @@
 import React from "react";
 import { FiCheckCircle } from "react-icons/fi";
 import { FaCarCrash, FaTools, FaHammer, FaRulerCombined } from "react-icons/fa";
-
+import { COLORS } from "../../../theme/colors";
 const panelRepairData = [
   {
     title: "Minor Panel Damage",
@@ -49,8 +49,8 @@ const panelRepairData = [
 ];
 
 const PanelRepairs = () => {
-  const PINK = "#E066E6";
-  const LIME = "#CCFF66";
+  const PINK = COLORS.primary;
+  const LIME = COLORS.secondary;
 
   return (
     <section

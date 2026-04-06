@@ -3,7 +3,7 @@
 import React from "react";
 import { FiCheckCircle } from "react-icons/fi";
 import { FaPalette, FaCompactDisc } from "react-icons/fa";
-
+import { COLORS } from "../../../theme/colors";
 const PaintOptions = () => {
   const options = [
     {
@@ -38,8 +38,8 @@ const PaintOptions = () => {
     },
   ];
 
-  const PINK = "#E066E6";
-  const LIME = "#CCFF66";
+  const PINK = COLORS.primary;
+  const LIME = COLORS.secondary;
 
   return (
     <section

@@ -85,7 +85,7 @@ const VehicleTransformation = () => {
               e.currentTarget.style.color = PINK;
             }}
           >
-            <FaPhoneAlt className="text-[#E066E6]" /> Call {PHONE_NUMBER_FORMATTED}
+            <FaPhoneAlt className="text-[${COLORS.primary}]" /> Call {PHONE_NUMBER_FORMATTED}
           </a>
         </div>
       </div>

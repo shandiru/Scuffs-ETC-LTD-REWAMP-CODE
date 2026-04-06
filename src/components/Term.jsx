@@ -38,7 +38,7 @@ const TermsConditions = () => {
 
       {/* 🔹 Dotted lime background */}
       <div
-        className="absolute inset-0 bg-[radial-gradient(#CCFF66_2px,transparent_2px)] [background-size:20px_20px]"
+        className="absolute inset-0 bg-[radial-gradient(${LIME}_2px,transparent_2px)] [background-size:20px_20px]"
         style={{
           WebkitMaskImage:
             "linear-gradient(135deg, black 0%, transparent 40%, transparent 60%, black 100%)",
@@ -160,7 +160,7 @@ const TermsConditions = () => {
                 Email:{" "}
                 <a
                   href="mailto:info@scuffsetc.co.uk"
-                  className="text-[#E066E6] hover:underline"
+                  className="text-[${COLORS.primary}] hover:underline"
                 >
                   info@scuffsetc.co.uk
                 </a>
