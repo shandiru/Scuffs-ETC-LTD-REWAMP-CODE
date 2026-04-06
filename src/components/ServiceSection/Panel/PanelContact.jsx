@@ -2,10 +2,10 @@
 
 import React from "react";
 import { FaClock, FaShieldAlt, FaStar, FaTools, FaCarCrash } from "react-icons/fa";
-
+import { COLORS } from "../../../theme/colors";
 const ServiceCards = () => {
-  const PINK = "#E066E6";
-  const LIME = "#CCFF66";
+  const PINK = COLORS.primary;
+  const LIME = COLORS.secondary;
 
   return (
     <section

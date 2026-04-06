@@ -1,9 +1,9 @@
 import React from "react";
 import { FaShieldAlt, FaAward, FaThumbsUp, FaCheckCircle } from "react-icons/fa";
-
+import { COLORS } from "../../../theme/colors";
 const QualityAbout = () => {
-  const PINK = "#E066E6";
-  const LIME = "#CCFF66";
+  const PINK = COLORS.primary;
+  const LIME = COLORS.secondary;
 
   return (
     <section

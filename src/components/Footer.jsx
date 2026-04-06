@@ -1,8 +1,9 @@
 import React from "react";
 import { FaFacebookF, FaInstagram } from "react-icons/fa";
-
+import { COLORS } from "../theme/colors";
 export default function Footer() {
-  const PINK = "#E066E6";
+  const PINK = COLORS.primary;
+
 
   // 🧩 Combined services list
   const services = [

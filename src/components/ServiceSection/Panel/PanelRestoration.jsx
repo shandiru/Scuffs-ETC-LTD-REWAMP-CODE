@@ -3,10 +3,10 @@
 import React from "react";
 import { FiCheckCircle } from "react-icons/fi";
 import { FaCarCrash, FaTools, FaHammer, FaRulerCombined } from "react-icons/fa";
-
+import { COLORS } from "../../../theme/colors";
 const PanelRestoration = () => {
-  const PINK = "#E066E6";
-  const LIME = "#CCFF66";
+  const PINK = COLORS.primary;
+  const LIME = COLORS.secondary;
 
   return (
     <section

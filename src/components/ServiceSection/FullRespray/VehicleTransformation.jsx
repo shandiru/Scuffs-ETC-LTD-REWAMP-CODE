@@ -3,10 +3,11 @@
 import React from "react";
 import { FaPalette, FaStar, FaPhoneAlt } from "react-icons/fa";
 import { PHONE_NUMBER, PHONE_NUMBER_FORMATTED } from '../../../Data/contact';
-
+import { COLORS } from "../../../theme/colors";
 const VehicleTransformation = () => {
-  const PINK = "#E066E6";
-  const LIME = "#CCFF66";
+  const PINK = COLORS.primary;
+  const LIME = COLORS.secondary;
+  
 
   return (
     <section

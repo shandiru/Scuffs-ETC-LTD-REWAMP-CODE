@@ -1,11 +1,11 @@
 
 
 import { FaCar, FaMagic, FaShieldAlt } from "react-icons/fa";
-
+import { COLORS } from "../../theme/colors";
 
 export default function CredentialsSection() {
-  const PINK = "#E066E6";
-  const LIME = "#CCFF66";
+  const PINK = COLORS.primary;
+  const LIME = COLORS.secondary;
 
 
 

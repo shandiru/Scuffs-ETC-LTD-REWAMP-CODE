@@ -5,10 +5,10 @@ import { FaPhoneAlt } from "react-icons/fa";
 import { HashLink } from "react-router-hash-link";
 import { PHONE_NUMBER, PHONE_NUMBER_FORMATTED } from '../../../Data/contact';
 import { scrollWithOffset } from '../../../utils/scrollWithOffset';
-
+import { COLORS } from "../../../theme/colors";
 const PanelTransformation = () => {
-  const PINK = "#E066E6";
-  const LIME = "#CCFF66";
+  const PINK = COLORS.primary;
+  const LIME = COLORS.secondary;
 
 
   return (

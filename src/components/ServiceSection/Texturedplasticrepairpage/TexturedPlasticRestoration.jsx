@@ -10,10 +10,10 @@ import {
   FaPuzzlePiece,
   FaMagic,
 } from "react-icons/fa";
-
+import { COLORS } from "../../../theme/colors";
 export default function TexturedPlasticRestoration() {
-  const PINK = "#E066E6";
-  const LIME = "#CCFF66";
+  const PINK = COLORS.primary;
+  const LIME = COLORS.secondary;
 
   return (
     <section

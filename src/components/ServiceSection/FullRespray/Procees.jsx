@@ -2,7 +2,7 @@
 
 import React from "react";
 import { FaPalette, FaShieldAlt } from "react-icons/fa";
-
+import { COLORS } from "../../../theme/colors";
 const PaintProcess = () => {
   const steps = [
     { id: 1, title: "Preparation", description: "Complete disassembly and masking" },
@@ -12,8 +12,8 @@ const PaintProcess = () => {
     { id: 5, title: "Clear Coat", description: "Protective clear coat and polishing" },
   ];
 
-  const PINK = "#E066E6";
-  const LIME = "#CCFF66";
+  const PINK = COLORS.primary;
+  const LIME = COLORS.secondary;
 
   return (
     <section

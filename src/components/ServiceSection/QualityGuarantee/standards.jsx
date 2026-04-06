@@ -1,10 +1,10 @@
 import React from "react";
 import { Users, Award, CheckCircle, Star } from "lucide-react";
 import { FaShieldAlt, FaThumbsUp } from "react-icons/fa";
-
+import { COLORS } from "../../../theme/colors";
 export default function QualityStandards() {
-  const PINK = "#E066E6";
-  const LIME = "#CCFF66";
+  const PINK = COLORS.primary;
+  const LIME = COLORS.secondary;
 
   const standards = [
     {

@@ -3,10 +3,10 @@ import { HashLink } from "react-router-hash-link";
 import { FaShieldAlt, FaTools } from "react-icons/fa";
 import { PHONE_NUMBER, PHONE_NUMBER_FORMATTED } from '../../../Data/contact';
 import { scrollWithOffset } from '../../../utils/scrollWithOffset';
-
+import { COLORS } from "../../../theme/colors";
 const WarrantyClaimSection = () => {
-  const PINK = "#E066E6";
-  const LIME = "#CCFF66";
+  const PINK = COLORS.primary;
+  const LIME = COLORS.secondary;
 
 
   return (
