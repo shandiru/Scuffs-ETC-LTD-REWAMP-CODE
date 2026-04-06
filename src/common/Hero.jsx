@@ -4,7 +4,7 @@ import { ArrowLeft } from "lucide-react";
 import { HashLink } from "react-router-hash-link";
 import { scrollWithOffset } from '../utils/scrollWithOffset';
 
-export default function AlloyWheelHero({
+export default function Hero({
   backText,
   badge,
   title,

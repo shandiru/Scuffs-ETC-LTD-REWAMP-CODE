@@ -2,7 +2,7 @@
 // src/App.jsx
 
 
-import AlloyWheelHero from "../common/Hero";
+import Hero from "../common/Hero";
 import AlloyWheelRepair from "../components/ServiceSection/Alloywheelrepairpage/AlloyWheelRepair";
 import RestoreWheelsCTA from "../components/ServiceSection/Alloywheelrepairpage/RestoreWheelsCTA";
 
@@ -12,7 +12,7 @@ function Alloywheelrepairpage() {
   return (
     <>
    
-   <AlloyWheelHero {...HeroData}/>
+   <Hero {...HeroData}/>
    <AlloyWheelRepair />
    <RestoreWheelsCTA />
     

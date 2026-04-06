@@ -1,5 +1,5 @@
 import React from 'react'
-import FullHeader from '../common/Hero'
+import Hero from '../common/Hero'
 import FullAbout from '../components/ServiceSection/FullRespray/FullAbout'
 import PaintProcess from '../components/ServiceSection/FullRespray/Procees'
 import PaintOptions from '../components/ServiceSection/FullRespray/PaintOption'
@@ -10,7 +10,7 @@ import { HeroData } from '../Data/FullRespray/Data'
 const FullRespray = () => {
   return (
     <div>
-      <FullHeader {...HeroData}/>
+      <Hero {...HeroData}/>
       <FullAbout />
       <PaintProcess />
       <PaintOptions />

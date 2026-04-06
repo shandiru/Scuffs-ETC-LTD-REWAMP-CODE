@@ -3,12 +3,12 @@ import QualityAbout from '../components/ServiceSection/QualityGuarantee/QualityA
 import QualityStandards from '../components/ServiceSection/QualityGuarantee/standards'
 import WarrantyTerms from '../components/ServiceSection/QualityGuarantee/Warranty'
 import WarrantyClaimSection from '../components/ServiceSection/QualityGuarantee/Claim'
-import QualityHeader from '../common/Hero'
+import Hero from '../common/Hero'
 import { HeroData } from '../Data/Quality/Data'
 const Quality = () => {
   return (
     <div>
-      <QualityHeader {...HeroData}/>
+      <Hero {...HeroData}/>
       <QualityAbout />
       <QualityStandards />
       <WarrantyTerms />
