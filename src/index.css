@@ -81,4 +81,9 @@ select option:focus {
 @theme {
   --color-pink: #E066E6;
   --color-lime: #CCFF66;
+  --shadow-pink: 0 4px 20px rgba(224, 102, 230, 0.5);
+}
+
+.hover\:shadow-pink:hover {
+  box-shadow: 0 4px 20px rgba(224, 102, 230, 0.5);
 }

@@ -2,18 +2,12 @@
 
 import { HashLink } from "react-router-hash-link";
 import { PHONE_NUMBER, PHONE_NUMBER_FORMATTED } from '../../../Data/contact';
+import { scrollWithOffset } from '../../../utils/scrollWithOffset';
 
 export default function RestoreWheelsCTA() {
   const PINK = "#E066E6";
   const LIME = "#CCFF66";
 
-  // offset so header doesn't cover section
-  const scrollWithOffset = (el) => {
-    const yOffset = -80; // adjust to match your header height
-    const y =
-      el.getBoundingClientRect().top + window.pageYOffset + yOffset;
-    window.scrollTo({ top: y, behavior: "smooth" });
-  };
 
   return (
     <section className="py-16 px-4" style={{ backgroundColor: "#F5FFF7" }}>

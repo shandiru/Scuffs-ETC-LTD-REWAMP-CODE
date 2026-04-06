@@ -2,18 +2,12 @@
 "use client";
 import { HashLink } from "react-router-hash-link";
 import { PHONE_NUMBER, PHONE_NUMBER_FORMATTED } from '../../../Data/contact';
+import { scrollWithOffset } from '../../../utils/scrollWithOffset';
 
 export default function BodyworkCTA() {
   const PINK = "#E066E6";
   const LIME = "#CCFF66";
 
-  // offset for header
-  const scrollWithOffset = (el) => {
-    const yOffset = -80; // adjust if header height changes
-    const y =
-      el.getBoundingClientRect().top + window.pageYOffset + yOffset;
-    window.scrollTo({ top: y, behavior: "smooth" });
-  };
 
   return (
     <section className="py-16 px-4" style={{ backgroundColor: "#F1FAF1" }}>

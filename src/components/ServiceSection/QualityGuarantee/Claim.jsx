@@ -2,18 +2,12 @@ import React from "react";
 import { HashLink } from "react-router-hash-link";
 import { FaShieldAlt, FaTools } from "react-icons/fa";
 import { PHONE_NUMBER, PHONE_NUMBER_FORMATTED } from '../../../Data/contact';
+import { scrollWithOffset } from '../../../utils/scrollWithOffset';
 
 const WarrantyClaimSection = () => {
   const PINK = "#E066E6";
   const LIME = "#CCFF66";
 
-  // Offset so sticky header doesn't overlap
-  const scrollWithOffset = (el) => {
-    const yOffset = -80; // adjust if your header height differs
-    const y =
-      el.getBoundingClientRect().top + window.pageYOffset + yOffset;
-    window.scrollTo({ top: y, behavior: "smooth" });
-  };
 
   return (
     <section

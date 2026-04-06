@@ -2,6 +2,7 @@
 
 import { ArrowLeft } from "lucide-react";
 import { HashLink } from "react-router-hash-link";
+import { scrollWithOffset } from '../utils/scrollWithOffset';
 
 export default function AlloyWheelHero({
   backText,
@@ -13,10 +14,6 @@ export default function AlloyWheelHero({
   pink,
   lime,
 }) {
-  const scrollWithOffset = (el) => {
-    const y = el.getBoundingClientRect().top + window.pageYOffset - 80;
-    window.scrollTo({ top: y, behavior: "smooth" });
-  };
 
   return (
     <section className="w-full bg-white mt-25">

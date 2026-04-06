@@ -2,6 +2,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import { Menu, X, ChevronDown } from "lucide-react";
 import { HashLink } from "react-router-hash-link";
+import { scrollWithOffset } from '../utils/scrollWithOffset';
 
 const SERVICE_LINKS = [
   { name: "Alloy Wheel Repair", link: "/services/alloy-wheel-repair" },
@@ -46,11 +47,6 @@ export default function Header() {
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
 
-  const scrollWithOffset = (el) => {
-    const yOffset = -80;
-    const y = el.getBoundingClientRect().top + window.pageYOffset + yOffset;
-    window.scrollTo({ top: y, behavior: "smooth" });
-  };
 
   return (
     <header className="fixed top-0 left-0 right-0 bg-white border-b  border-gray-200 shadow-sm z-50">

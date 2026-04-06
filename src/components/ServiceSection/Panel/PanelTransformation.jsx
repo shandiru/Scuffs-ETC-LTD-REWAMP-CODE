@@ -4,18 +4,12 @@ import React from "react";
 import { FaPhoneAlt } from "react-icons/fa";
 import { HashLink } from "react-router-hash-link";
 import { PHONE_NUMBER, PHONE_NUMBER_FORMATTED } from '../../../Data/contact';
+import { scrollWithOffset } from '../../../utils/scrollWithOffset';
 
 const PanelTransformation = () => {
   const PINK = "#E066E6";
   const LIME = "#CCFF66";
 
-  // Offset so the fixed header doesn't overlap the contact form
-  const scrollWithOffset = (el) => {
-    const yOffset = -80; // adjust if your header height is different
-    const y =
-      el.getBoundingClientRect().top + window.pageYOffset + yOffset;
-    window.scrollTo({ top: y, behavior: "smooth" });
-  };
 
   return (
     <section

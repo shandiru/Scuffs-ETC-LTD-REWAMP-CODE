@@ -4,7 +4,8 @@ import { FaCar, FaMagic, FaShieldAlt } from "react-icons/fa";
 
 
 export default function CredentialsSection() {
-
+  const PINK = "#E066E6";
+  const LIME = "#CCFF66";
 
 
 
